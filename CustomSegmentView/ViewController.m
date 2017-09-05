@@ -18,9 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    CustomSegment *segment = [[CustomSegment alloc] initWithFrame:CGRectMake(0, 30, MAINSCREENWIDTH, 120)];
+    CustomSegment *segment = [[CustomSegment alloc] initWithFrame:CGRectMake(0, 30, MAINSCREENWIDTH, 40)];
     segment.space = 1;
-    segment.align = SegmentLayoutAlignVertical;
+    segment.align = SegmentLayoutAlignHorizontal;
     [segment addSegmentWithTitle:@"Title1" hanlder:^(NSString *title) {
         NSLog(@"%@",title);
     }];
