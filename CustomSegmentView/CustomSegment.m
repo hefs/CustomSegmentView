@@ -95,7 +95,7 @@
     CGFloat buttonHeight = _align == SegmentLayoutAlignHorizontal ? CGRectGetHeight(self.frame) : (CGRectGetHeight(self.frame) - self.buttons.count*_space)/self.buttons.count;
     for (UIButton *button in self.buttons) {
         NSInteger idx = [self.buttons indexOfObject:button];
-        if (idx == 0) {
+        if ((idx == _selectedIndex) || (_selectedIndex >= self.buttons.count && idx == 0)) {
             button.selected = YES;
             currentSegment = button;
         }

@@ -30,7 +30,7 @@ typedef NS_ENUM(NSUInteger, SegmentLayoutAlign) {
  */
 @property (nonatomic) CGFloat space;
 @property (nonatomic) SegmentLayoutAlign align;
-
+@property (nonatomic) NSInteger selectedIndex;
 /**
  按钮普通状态字体颜色
  */

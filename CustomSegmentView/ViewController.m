@@ -30,6 +30,7 @@
     [segment addSegmentWithTitle:@"Title3" hanlder:^(NSString *title) {
         NSLog(@"%@",title);
     }];
+    segment.selectedIndex = 1;
     [self.view addSubview:segment];
 }
 
